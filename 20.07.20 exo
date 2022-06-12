@@ -1,0 +1,108 @@
+#1
+nom = input("entrez votre nom:"  )
+print ("bienvenue : ", nom)
+#2
+a = input("entrez une valeur a : ")
+b = input("entrez une valeur b : ")
+a = int (a)
+b = int (b)
+s = a+b
+m = max(a,b)
+print("la somme total :", s)
+print("le max est :", m)
+#3
+c = input("entrez une valeur c : ")
+d = input ("entrez une valeur d : ")
+c = int (c)
+d = int (d)
+s = c+d
+print("la somme total :" , s)
+s = a+b+c+d
+print ("la somme tatal de a, b, c, d :" , s)
+
+#4
+for i in range(0,103):
+    print (i)
+    
+#5 pair/impaire:
+nombre = int(input( " entrez un nombre : "))
+if (nombre%2) == 0:
+    print("pair")
+else:
+    print("impair")
+
+#6 Majeur/ mineur
+age = int(input( " entrez un age : "))
+if (age >18):
+    print("Majeur")
+else:
+    print("mineur")
+
+# 7demande à l’utilisateur de saisir 3 nombre x, y et z et de lui afficher leur maximum
+z = input("entrez une valeur z : ")
+y = input("entrez une valeur y : ")
+x = input("entrez une valeur x : ")
+mx = max(z,y,x)
+print("le max des 3 valeur est:", mx)
+
+#8 demande à l’utilisateur de saisir un nombre entier n et de lui afficher n !
+#/ n = int(input("entrez une valeur n : "))
+# som= 0
+# som = (1+n+1)
+# print ("le tatal est:", som)
+n = int(input("entrez une valeur n : "))
+som= 0
+for i in range(1,n+1):
+    som = som + i
+print ("la somme 1+2+3+...+",n,"= : ",som)
+
+#9 afficher le nombre u
+
+u= int(input("entre un nombre u"))
+j=0
+for i in range(1,u+1):
+    j = j*i
+    print("fact de u est :",u," = :",j)
+
+#10 aire d'un cercle / rayon
+import math
+rayon = int(input("rayon= :"))
+aire = math.pi * rayon * rayon;
+circonference = 2 * math.pi * rayon;
+diametre = 2*rayon;
+print("le diametre =", diametre)
+print("aire d'un cercle =", aire)
+print("circonference est = :", circonference)
+print("le rayon =", rayon)
+
+#11 saisir un nombre entier Q et de lui afficher tous les diviseurs de ce nombre.
+q = int(input("entre un nombre q : "))
+for i in range(1,n+1):
+    if(n%i==0):
+        print("Le nombre ",i," est un diviseur de  ",n)
+        #j'ai regarder la reponce ..:(..
+        
+#12table de multiplication
+#a
+nbs = int(input("entrez nombre nbs "))
+print("table de multiplication de :",nbs," est:")
+for i in range(1,10):
+    print(i, " x ",nbs," = ",i*nbs)
+#b
+for nbs in range(1,10):
+    print(',')
+    print("la table de M:",nbs,"est:")
+    for i in range(1,10):
+        print(i, " x.",nbs," = ", i*nbs)
+        
+#13 definir A & B et les diviser %
+g = int(input("valeur g : "))
+h = int(input("valeur h : "))
+q = g//h
+r = g%h
+print("le resultat de la division est: q =",q)
+print("reste: r =",r)
+
+#16 afficher les caractères d’une variable du type chaine de caractères.
+
+float (input("entrez un mot"))
